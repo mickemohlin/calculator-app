@@ -9,24 +9,24 @@
 </head>
 <body>
     <div class="calculator">
-        <p class="output">0</p>
+        <p id="output" class="output">0</p>
         <div class="button-grid">
-            <button class="col-1 row-1 number">7</button>
-            <button class="col-2 row-1 number">8</button>
-            <button class="col-3 row-1 number">9</button>
-            <button class="col-4 row-1 operator">/</button>
-            <button class="col-1 row-2 number">4</button>
-            <button class="col-2 row-2 number">5</button>
-            <button class="col-3 row-2 number">6</button>
-            <button class="col-4 row-2 operator">x</button>
-            <button class="col-1 row-3 number">1</button>
-            <button class="col-2 row-3 number">2</button>
-            <button class="col-3 row-3 number">3</button>
-            <button class="col-4 row-3 operator">-</button>
-            <button class="col-1 row-4 number">0</button>
-            <button class="col-2 row-4 number">.</button>
-            <button class="col-3 row-4 equals">=</button>
-            <button class="col-4 row-4 operator">+</button>
+            <button class="col-1 row-1 number" onclick="buttonPressed('7')">7</button>
+            <button class="col-2 row-1 number" onclick="buttonPressed('8')">8</button>
+            <button class="col-3 row-1 number" onclick="buttonPressed('9')">9</button>
+            <button class="col-4 row-1 operator" onclick="buttonPressed('/')">/</button>
+            <button class="col-1 row-2 number" onclick="buttonPressed('4')">4</button>
+            <button class="col-2 row-2 number" onclick="buttonPressed('5')">5</button>
+            <button class="col-3 row-2 number" onclick="buttonPressed('6')">6</button>
+            <button class="col-4 row-2 operator" onclick="buttonPressed('x')">x</button>
+            <button class="col-1 row-3 number" onclick="buttonPressed('1')">1</button>
+            <button class="col-2 row-3 number" onclick="buttonPressed('2')">2</button>
+            <button class="col-3 row-3 number" onclick="buttonPressed('3')">3</button>
+            <button class="col-4 row-3 operator" onclick="buttonPressed('-')">-</button>
+            <button class="col-1 row-4 reset" onclick="buttonPressed('C')">C</button>
+            <button class="col-2 row-4 number" onclick="buttonPressed('0')">0</button>
+            <button class="col-3 row-4 equals" onclick="buttonPressed('=')">=</button>
+            <button class="col-4 row-4 operator" onclick="buttonPressed('+')">+</button>
         </div>
     </div>
     <script src="script.js"></script>
