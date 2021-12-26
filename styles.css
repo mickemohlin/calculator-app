@@ -1,3 +1,91 @@
 body {
-    background-color: aquamarine;
+    background-color: darkslategray;
+    text-align: center;
+}
+
+.calculator {
+    background-color: #383838;
+    border: 2px solid black;
+    width: 50%;
+    height: 350px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.button-grid {
+    display: grid;
+    height: 80%;
+    grid-gap: 10px;
+}
+
+.output {
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    text-align: right;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.col-1 {
+    grid-column-start: 1;
+    grid-column-end:2;
+}
+
+.col-2 {
+    grid-column-start: 2;
+    grid-column-end:3;
+}
+
+.col-3 {
+    grid-column-start: 3;
+    grid-column-end:4;
+}
+
+.col-4 {
+    grid-column-start: 4;
+    grid-column-end:5;
+}
+
+.row-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.row-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.row-3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.row-4 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.number {
+    background-color: grey;
+}
+
+.operator {
+    background-color: lightskyblue;
+}
+
+.equals {
+    background-color: red;
 }
