@@ -78,18 +78,39 @@ button {
     font-weight: bold;
 }
 
+button:active {
+    background-color: #3e8e41;
+    transform: translateY(4px);
+}
+
 .number {
     background-color: grey;
+}
+
+.number:hover {
+    background-color: silver;
 }
 
 .operator {
     background-color: lightskyblue;
 }
 
+.operator:hover {
+    background-color: lightseagreen
+}
+
 .equals {
-    background-color: greenyellow;
+    background-color: lightgreen;
+}
+
+.equals:hover {
+    background-color: lime;
 }
 
 .reset {
+    background-color: tomato;
+}
+
+.reset:hover {
     background-color: red;
 }
