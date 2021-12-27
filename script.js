@@ -1,5 +1,6 @@
 const ERROR_MESSAGE = "ERROR";
 const DEFAULT_OUTPUT = "0";
+const MAX_INPUT_LENGTH = 22;
 
 var leftOperand;
 var rightOperand;
@@ -26,6 +27,11 @@ function buttonPressed(icon) {
 
 function updateLogic(icon) {
     let currentInput = document.getElementById("output").innerText;
+
+    if(MAX_INPUT_LENGTH <= currentInput.length) {
+        console.log("Input field to long!");
+        return;
+    }
 
     if(currentInput == ERROR_MESSAGE && icon != "C") {
         console.log("Press C to reset from error state!");
@@ -69,9 +75,6 @@ function calculate() {
         let leftOperandInt = parseInt(leftOperand);
         let rightOperandInt = parseInt(rightOperand);
 
-        console.log("left: " +  leftOperandInt);
-        console.log("right: " + rightOperandInt);
-
         let result;
 
         switch(operator){
@@ -95,6 +98,8 @@ function calculate() {
                 updateOutput(ERROR_MESSAGE);
                 return;
         }
+
+        console.log(leftOperandInt + operator + rightOperandInt + " = " + result);
 
         reset();
         leftOperand = result;
